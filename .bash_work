@@ -1,0 +1,16 @@
+## At work
+alias mycomp='ssh ssingh1-ld1'
+## SVIN
+alias svng='svn st | grep ^[CDMA]'
+alias svindiff="svin diff | colordiff | less -R"
+alias sup="svin up"
+
+## MINT & ligradle
+alias mb='mint build'
+alias mc='mint clean'
+alias mco='mint checkout'
+alias lb='ligradle build'
+alias lc='ligradle clean'
+alias lbx='ligradle build -x test'
+alias li='ligradle idea'
+alias reload='lc && rm -rf build/ && lbx && li'
